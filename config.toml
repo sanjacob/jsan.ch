@@ -1,3 +1,73 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://jsan.ch/'
+languageCode = 'en-uk'
+title = "I am Jacob"
+theme = "hello-friend-ng"
+paginate = 10
+
+[params]
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "follow me and get in touch"
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "My official personal website"
+  keywords = "homepage, blog, tech, software"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "I am Jacob"
+    subtitle = "follow me and get in touch"
+    keywords = "blog,tech,software"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "cd /"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "wearemagic"
+    name       = "WeAreMagic"
+    url        = "https://github.com/magicweare"
+
+
+# Social Icons
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/jacobszpz"
+
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/jacobszpz"
+
+[[params.social]]
+  name = "email"
+  url = "mailto:jacob@san.contact"
+
+[[params.social]]
+  name = "discord"
+  url = "https://discord.com/users/624777161387278407"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/sanjacob"
+
