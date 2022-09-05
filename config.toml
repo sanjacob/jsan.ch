@@ -3,6 +3,7 @@ languageCode = 'en-uk'
 title = "I am Jacob"
 theme = "hello-friend-ng"
 paginate = 10
+googleAnalytics = 'G-VKHKD5MKMY'
 
 [params]
   dateform = "Jan 2, 2006"
@@ -16,9 +17,12 @@ paginate = 10
   # Enable sharing buttons, if you like
   enableSharingButtons = true
 
+  # Enable theme toggling
+  enableThemeToggle = true
+
   # Metadata mostly used in document's head
-  description = "My official personal website"
-  keywords = "homepage, blog, tech, software"
+  description = "My personal website about software and computers"
+  keywords = "homepage, blog, tech, software, computers, development"
   images = [""]
 
 [taxonomies]
