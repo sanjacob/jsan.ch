@@ -30,6 +30,10 @@ should have you covered, as long as you can run OpenOCD [without sudo]({{< ref "
 
 Thanks to Jeremy Bentham from iosoft for responding to my query.
 
+## Updates
+
+1. I have added information on how to erase the flash memory using the openocd runner (2023-09-07).
+
 ## Introduction
 
 Earlier this year I was designing a board which would be powered by the [nRF52833][nrf52833].
@@ -253,6 +257,21 @@ This udev rule will only allow non-root access to cmsis-dap devices.
 If you want generalised access to openocd without being root, please read [this][thecore],
 but keep in mind it is better to restrict unnecessary access.
 
+### Update: Erasing the flash memory (2023-09-07)
+
+I commonly need to run `west flash --erase` to erase the nRF52 flash memory, which can contain
+Bluetooth bonding metadata. This works only with the jlink runner, with the openocd
+runner, you will need to run this instead:
+
+```bash
+west flash --runner openocd --cmd-pre-load "reset halt; nrf5 mass_erase"
+```
+
+This adds a custom openocd command after running `init` but before loading the program
+to the chip. First, the board is reset and halted. Then, it runs a specific routine that will
+erase the code memory and user configuration registers of the chip [(documentation)][ocd-flash-cmd].
+
+
 ## Closing thoughts
 
 - If you want to use a different Raspberry Pi board, such as a RPi 2, Lean2 covered
@@ -290,3 +309,4 @@ target, but alas I have no way of testing this.
 [west-flash]: https://docs.zephyrproject.org/latest/develop/west/build-flash-debug.html
 [thecore]: https://forgge.github.io/theCore/guides/running-openocd-without-sudo.html
 [rpi-native]: https://github.com/raspberrypi/openocd/blob/rp2040-v0.12.0/tcl/interface/raspberrypi-native.cfg
+[ocd-flash-cmd]: https://openocd.org/doc/html/Flash-Commands.html
