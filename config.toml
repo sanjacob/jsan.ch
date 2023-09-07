@@ -1,9 +1,20 @@
 baseURL = 'https://jsan.ch/'
 languageCode = 'en-uk'
-title = "I am Jacob"
+title = "Jacob Sánchez"
 theme = "hello-friend-ng"
 paginate = 10
 googleAnalytics = 'G-VKHKD5MKMY'
+
+contentDir  = "content"
+publishDir  = "public"
+dataDir     = "data"
+archetypeDir = "archetypes"
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Jacob Sánchez"
 
 [params]
   dateform = "Jan 2, 2006"
@@ -12,7 +23,7 @@ googleAnalytics = 'G-VKHKD5MKMY'
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "follow me and get in touch"
+  homeSubtitle = "Software developer"
 
   # Enable sharing buttons, if you like
   enableSharingButtons = true
@@ -20,18 +31,20 @@ googleAnalytics = 'G-VKHKD5MKMY'
   # Enable theme toggling
   enableThemeToggle = true
 
+  disableReadOtherPosts = false
+
   # Metadata mostly used in document's head
   description = "My personal website about software and computers"
   keywords = "homepage, blog, tech, software, computers, development"
   images = [""]
 
 [taxonomies]
-    category = "blog"
+    category = "categories"
     tag      = "tags"
     series   = "series"
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     title = "I am Jacob"
     subtitle = "follow me and get in touch"
     keywords = "blog,tech,software"
@@ -46,11 +59,16 @@ googleAnalytics = 'G-VKHKD5MKMY'
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
+[menu]
   # And you can even create generic menu
   [[menu.main]]
     identifier = "wearemagic"
     name       = "WeAreMagic"
     url        = "https://github.com/magicweare"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
 
 
 # Social Icons
