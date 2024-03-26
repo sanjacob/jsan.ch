@@ -11,6 +11,9 @@ dataDir     = "data"
 archetypeDir = "archetypes"
 staticDir = "static"
 
+disableRSS     = false
+disableSitemap = false
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
@@ -38,6 +41,16 @@ staticDir = "static"
 
 [params.author]
   name = "Jacob Sánchez"
+  email = 'jacobszpz@protonmail.com'
+
+[params.footer]
+    rss = true
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
 
 [taxonomies]
   category = "categories"
