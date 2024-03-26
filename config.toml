@@ -13,9 +13,6 @@ archetypeDir = "archetypes"
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
-[author]
-  name = "Jacob Sánchez"
-
 [params]
   dateform = "Jan 2, 2006"
   dateformShort = "Jan 2"
@@ -38,10 +35,13 @@ archetypeDir = "archetypes"
   keywords = "homepage, blog, tech, software, computers, development"
   images = [""]
 
+[params.author]
+  name = "Jacob Sánchez"
+
 [taxonomies]
-    category = "categories"
-    tag      = "tags"
-    series   = "series"
+  category = "categories"
+  tag      = "tags"
+  series   = "series"
 
 [languages]
   [languages.en.params]
@@ -70,24 +70,15 @@ archetypeDir = "archetypes"
     name       = "Blog"
     url        = "/posts"
 
-
 # Social Icons
 
 [[params.social]]
   name = "github"
-  url = "https://github.com/jacobszpz"
+  url = "https://github.com/sanjacob"
 
 [[params.social]]
   name = "twitter"
   url = "https://twitter.com/jacobszpz"
-
-[[params.social]]
-  name = "email"
-  url = "mailto:jacob@san.contact"
-
-[[params.social]]
-  name = "discord"
-  url = "https://discord.com/users/624777161387278407"
 
 [[params.social]]
   name = "linkedin"
