@@ -84,7 +84,7 @@ Instead, you can use the following approach:
 <component is="script" src="https://accounts.google.com/gsi/client" async />
 ```
 
-With this sorted out, it's time review our approaches.
+With this sorted out, it's time to review our approaches.
 
 
 ## HTML Approach
