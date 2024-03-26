@@ -1,5 +1,5 @@
 +++
-title = "How to use Google Sign In"
+title = "How to use Google Sign In with Vue"
 description = """
   A quick overview of how I managed to use Google Sign In with Vue (Nuxt)
 """
