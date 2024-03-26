@@ -9,6 +9,7 @@ contentDir  = "content"
 publishDir  = "public"
 dataDir     = "data"
 archetypeDir = "archetypes"
+staticDir = "static"
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"

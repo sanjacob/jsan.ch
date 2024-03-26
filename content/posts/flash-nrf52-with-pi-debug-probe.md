@@ -1,7 +1,7 @@
 +++
 title = "Programming an nRF52 with the Raspberry Pi Debug Probe"
 description = """
-
+  How to program an nRF52 chip with the RPi Debug Probe
 """
 type = ["posts","post"]
 tags = [
