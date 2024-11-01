@@ -27,7 +27,7 @@ struct ContentView: View {
     var action: (() -> Void)?
 
     var body: some View {
-        Button(action: { print("hello world") })
+        Button(action: { self.action?() })
     }
 
     func onAction(perform: (() -> Void)?) -> some View {
@@ -104,7 +104,7 @@ on them.
 You may try to get around this using `@State` to hold the closure, but this
 won't work either.
 
-[@Kyokook Hwang][kyokoow] came up with a solution for this.
+[@Kyokook Hwang][kyokook] came up with a solution for this.
 Instead of returning self, it is possible to create a *copy* of self,
 modify it, then return it.
 The only requirement is for the callback to be a public var.
