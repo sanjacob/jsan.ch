@@ -284,10 +284,10 @@ target, but alas I have no way of testing this.
 
 ## Related material
 
-- Raspberry Pi Debug Probe Documentation: [link][probe-docs]
-- Programming an nRF52 using a Raspberry Pi 2: [link][lean2]
-- Using OpenOCD in the Raspberry Pi: [link][lean2-2]
-- OpenOCD official website: [link][ocd]
+- [Raspberry Pi Debug Probe Documentation][probe-docs]
+- [Programming an nRF52 using a Raspberry Pi 2][lean2]
+- [Using OpenOCD in the Raspberry Pi][lean2-2]
+- [OpenOCD official website][ocd]
 
 
 
