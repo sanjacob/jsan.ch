@@ -18,7 +18,7 @@ categories = [
 +++
 ### Acknowledgements
 
-Thanks to [@Kyokoow Hwang][kyokoow] who came up with the solution.
+Thanks to [@Kyokook Hwang][kyokook] who came up with the solution.
 
 ## TL;DR
 
@@ -99,12 +99,12 @@ the method as `mutating`, but if you do that the compiler will let you
 know that Views are **immutable**, and you cannot use mutating methods
 on them.
 
-![Views are immutable](/images/pass-closure-in-modifier-swiftui/compiler-error.png)
+![Views are immutable](/images/method-chaining-view-swiftui/compiler-error.png)
 
 You may try to get around this using `@State` to hold the closure, but this
 won't work either.
 
-[@Kyokoow Hwang][kyokoow] came up with a solution for this.
+[@Kyokook Hwang][kyokoow] came up with a solution for this.
 Instead of returning self, it is possible to create a *copy* of self,
 modify it, then return it.
 The only requirement is for the callback to be a public var.
