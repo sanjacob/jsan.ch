@@ -158,7 +158,7 @@ You can still read about that method on [StackOverflow][so-answer].
 ## Related material
 
 - Apple developer documentation: [environmentkey][environmentkey]
-- Stackoverflow: [Howe to implement custom callback action][so-callback]
+- Stackoverflow: [How to implement custom callback action][so-callback]
 - Stackoverflow: [How to store closure in @Environment][so-closure-env]
 - Stackoverflow: [How to implement function like onAppear][so-answer]
 
